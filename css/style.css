@@ -1,1 +1,61 @@
 /* REGOLE SPECIFICHE -------------------------------- */
+
+/* Regole della barra di navigazione */
+.bg-nav {
+  background-color: #2c3e50;
+}
+.navbar {
+  padding: 20px;
+  margin: 0;
+}
+.navbar-brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar a:hover {
+  color: #fff;
+}
+.navbar-toggle {
+  background-color: #1abc9c;
+}
+.icon-bar {
+  background-color: #fff;
+}
+
+/* Regole del Footer */
+.copyright {
+  background-color: #1a252f;
+  height: 72px;
+}
+.text-white {
+  color: #fff;
+  padding-top: 25px;
+}
+
+/* REGOLE RESPONSIVE -------------------------------- */
+
+@media all and (min-width: 768px){
+  /* Regole Responsive della barra di navigazione */
+  .navbar-collapse {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .navbar a{
+    color: #fff;
+  }
+  .navbar-right a:hover{
+    color: #1abc9c;
+  }
+  .navbar-right>li>a:hover {
+    background-color: transparent;
+  }
+}
+
+@media all and (min-width: 992px){
+  /* Regole Responsive della barra di navigazione */
+  .navbar-brand {
+    font-size: 28px;
+  }
+
+}
