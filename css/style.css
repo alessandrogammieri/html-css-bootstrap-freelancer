@@ -1,29 +1,94 @@
-/* REGOLE SPECIFICHE -------------------------------- */
-
-/* Regole della barra di navigazione */
-.bg-nav {
+/* REGOLE GENERALI */
+.bg-hf {
   background-color: #2c3e50;
+  border-color: #2c3e50;
 }
-.navbar {
-  padding: 20px;
-  margin: 0;
+
+/* REGOLE SPECIFICHE */
+
+/* REGOLE DELL'HEADER E DELLA BARRA DI NAVIGAZIONE -------------------------- */
+header .navbar {
+  border-radius: 0;
+  padding: 25px 0;
 }
-.navbar-brand {
+
+/* Regole del logo ---------------------------------------------------------- */
+header .navbar-default .navbar-brand {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
 }
-.navbar a:hover {
+header .navbar-default .navbar-brand:hover {
   color: #fff;
-}
-.navbar-toggle {
-  background-color: #1abc9c;
-}
-.icon-bar {
-  background-color: #fff;
+  background-color: transparent;
 }
 
-/* Regole del Footer */
+/* Regole del menu a panino ------------------------------------------------- */
+header .navbar-default .navbar-toggle {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+header .navbar-default .navbar-toggle:focus,
+header .navbar-default .navbar-toggle:hover {
+  background-color: #148F77;
+  border-color: #148F77;
+}
+header .navbar-default .navbar-collapse {
+  border: 0;
+}
+
+/* Regole della barra di navigazione a destra ------------------------------- */
+header .navbar-right {
+  font-size: 18px;
+  font-weight: 700;
+}
+header .navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+header .navbar-default .navbar-nav>li>a:hover {
+  color: #1abc9c;
+}
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/* REGOLE DEL FOOTER -------------------------------------------------------- */
+
+/* Social bar --------------------------------------------------------------- */
+.padding-sb {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.title-ft {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.text-ft {
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+footer p a {
+  color: #1abc9c;
+}
+footer p a:focus, footer p a:hover {
+  color: #148F77;
+}
+.fa {
+  padding: 0 20px 20px 20px;
+  font-size: 30px;
+  margin: 5px 2px;
+  color: #fff;
+}
+.fa:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* Barra del Copyright ------------------------------------------------------ */
 .copyright {
   background-color: #1a252f;
   height: 72px;
@@ -33,29 +98,20 @@
   padding-top: 25px;
 }
 
+
+
+
+
 /* REGOLE RESPONSIVE -------------------------------- */
 
 @media all and (min-width: 768px){
-  /* Regole Responsive della barra di navigazione */
-  .navbar-collapse {
-    font-size: 18px;
-    font-weight: 700;
-  }
-  .navbar a{
-    color: #fff;
-  }
-  .navbar-right a:hover{
-    color: #1abc9c;
-  }
-  .navbar-right>li>a:hover {
-    background-color: transparent;
-  }
+  /* Regole Responsive */
+
 }
 
 @media all and (min-width: 992px){
   /* Regole Responsive della barra di navigazione */
-  .navbar-brand {
+  header .navbar-default .navbar-brand {
     font-size: 28px;
   }
-
 }
