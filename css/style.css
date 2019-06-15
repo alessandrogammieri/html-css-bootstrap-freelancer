@@ -4,12 +4,17 @@
   border-color: #2c3e50;
 }
 
+.bg-ca {
+  background-color: #1abc9c;
+}
+
 /* REGOLE SPECIFICHE */
 
 /* REGOLE DELL'HEADER E DELLA BARRA DI NAVIGAZIONE -------------------------- */
 header .navbar {
   border-radius: 0;
   padding: 25px 0;
+  margin-bottom: 0;
 }
 
 /* Regole del logo ---------------------------------------------------------- */
@@ -52,6 +57,45 @@ header .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 
+/* REGOLE DEL MAIN ---------------------------------------------------------- */
+
+/* Cover image -------------------------------------------------------------- */
+.title-cover {
+  font-size: 43px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+.text-cover {
+  font-size: 20px;
+  color: #fff;
+}
+.padding-cover {
+  padding: 90px 0;
+}
+.divider-custom {
+  padding: 25px 0;
+}
+.divider-custom .fa-star {
+  font-size:40px;
+  color:#fff;
+}
+.divider-custom .btn-default {
+  width: 90px;
+  padding: 1px 0;
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  margin-bottom: 20px;
+}
+.divider-custom .btn-default:last-child {
+  margin-left: 10px;
+}
+.divider-custom .btn-default:first-child {
+  margin-right: 10px;
+}
+
 /* REGOLE DEL FOOTER -------------------------------------------------------- */
 
 /* Social bar --------------------------------------------------------------- */
@@ -77,13 +121,13 @@ footer p a {
 footer p a:focus, footer p a:hover {
   color: #148F77;
 }
-.fa {
+footer .fa {
   padding: 0 20px 20px 20px;
-  font-size: 30px;
+  font-size: 20px;
   margin: 5px 2px;
   color: #fff;
 }
-.fa:hover {
+footer .fa:hover {
   color: #1abc9c;
   text-decoration: none;
 }
@@ -99,14 +143,24 @@ footer p a:focus, footer p a:hover {
 }
 
 
-
-
-
-/* REGOLE RESPONSIVE -------------------------------- */
+/* REGOLE RESPONSIVE -------------------------------------------------------- */
 
 @media all and (min-width: 768px){
-  /* Regole Responsive */
-
+  /* Regole Responsive della Social Bar*/
+  footer .fa {
+    font-size: 30px;
+  }
+  /* Regole Responsive della Cover image*/
+  .title-cover {
+    font-size: 65px;
+  }
+  .text-cover {
+    font-size: 24px;
+  }
+  /* Regole Responsive divider Star Icon*/
+  .divider-custom .btn-default {
+    width: 100px;
+  }
 }
 
 @media all and (min-width: 992px){
