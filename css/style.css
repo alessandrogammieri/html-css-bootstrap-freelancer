@@ -45,6 +45,17 @@
   color: #fff;
   padding-bottom: 10px;
 }
+/* Titolo Portfolio e Form contatti */
+.title-fmp {
+  font-size: 38px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+/* Padding About, Form contatti e Portfolio */
+.padding-ab {
+  padding: 90px 0;
+}
 
 /* REGOLE SPECIFICHE */
 
@@ -118,13 +129,10 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 /* About -------------------------------------------------------------------- */
 .title-ab {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-}
-.padding-ab {
-  padding: 90px 0;
 }
 .text-bt {
   font-size: 20px;
@@ -137,11 +145,29 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 /* Form contatti ------------------------------------------------------------ */
-.title-fm {
-  font-size: 40px;
-  font-weight: 700;
-  color: #2c3e50;
-  text-transform: uppercase;
+.text-form {
+  font-size: 20px;
+  color: #495057;
+  padding: 30px 0;
+}
+form .text-form {
+  width: 100%;
+  border-left: transparent;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom: solid 1px lightgray;
+}
+.invia {
+  color: #fff;
+  background-color: #1abc9c;
+  border: 0;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 10%;
+}
+form input:last-child:hover {
+  background-color: #148F77;
+  border-color: #148F77;
 }
 
 /* REGOLE DEL FOOTER -------------------------------------------------------- */
@@ -212,7 +238,13 @@ footer .fa:hover {
   .divider-custom .btn-default {
     width: 100px;
   }
-
+  /* Regole Responsive del Form contatti*/
+  .text-form {
+    font-size: 24px;
+  }
+  .invia {
+    font-size: 24px;
+  }
 }
 
 @media all and (min-width: 992px){
