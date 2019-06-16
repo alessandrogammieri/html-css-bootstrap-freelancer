@@ -127,6 +127,40 @@ header .navbar-default .navbar-toggle .icon-bar {
   padding: 190px 0 90px 0;
 }
 
+/* Portfolio ---------------------------------------------------------------- */
+.bg-porm img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+.box {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 350px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(26,188,156,.9);
+  border-color: rgba(26,188,156,.9);
+}
+.box:hover .overlay {
+  opacity: 1;
+}
+.fa-plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 75px;
+}
+
 /* About -------------------------------------------------------------------- */
 .title-ab {
   font-size: 38px;
@@ -210,7 +244,6 @@ footer .fa:hover {
   color: #fff;
   padding-top: 25px;
 }
-
 
 /* REGOLE RESPONSIVE -------------------------------------------------------- */
 
